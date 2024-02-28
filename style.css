@@ -1,0 +1,91 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.home {
+  background: url("./images/LandingPage-fix.jpg") no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 119px 19px;
+}
+
+/* Variablesss */
+:root {
+  --primary-color: #a37351;
+  --dark-color: #0f0f0f;
+  --second-color: white;
+  --third-color: rgb(253 230 138);
+
+  --h1-font-size: 50px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global Section */
+section {
+  padding: 0px 0;
+}
+
+.text-coffe {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-second {
+  color: var(--second-color);
+}
+
+.text-third {
+  color: var(--third-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+/* Media Queries */
+/* @media (max-width: 767px) {
+  
+  .home {
+    padding: 100px 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .home {
+    padding: 110px 20px;
+  }
+} */
+
+/* NAVBAR */
+/* Navbar Styles */
+.navbar {
+  background-color: var(--second-color);
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: 450; /* Sesuaikan nilai sesuai keinginan Anda */
+  color: var(--dark-color);
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--primary-color);
+}

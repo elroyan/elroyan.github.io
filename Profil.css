@@ -1,0 +1,454 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Variablesss */
+:root {
+  --primary-color: #a37351;
+  --dark-color: #0f0f0f;
+  --second-color: white;
+  --third-color: rgb(253 230 138);
+
+  --h1-font-size: 50px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global Section */
+section {
+  padding: 0px 0;
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-submit {
+  color: var(--dark-color);
+  background-color: var(--third-color);
+}
+
+.btn-submit:hover {
+  color: var(--third-color);
+  background-color: var(--dark-color);
+}
+
+.text-coffe {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-second {
+  color: var(--second-color);
+}
+
+.text-third {
+  color: var(--third-color);
+}
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* CSS Section */
+/* NAVBAR */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  transition: 0.3s; /* Animasi perubahan warna */
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: 450; /* Sesuaikan nilai sesuai keinginan Anda */
+  color: var(--dark-color);
+}
+
+/* Hover atau Active di Navbar */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--primary-color);
+}
+
+/* Media Queries untuk Layar Kecil */
+@media (max-width: 767px) {
+  .navbar {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.6
+    ); /* Nilai alpha yang lebih tinggi untuk layar kecil */
+  }
+}
+
+/* SECTION about */
+#about {
+  background-color: #0e2954;
+  padding: 110px 0;
+}
+.bg-amber-200 {
+  background-color: var(--third-color);
+}
+
+/* Garis about */
+.h-\[1px\].Og {
+  height: 3px;
+  width: 25%;
+}
+
+.imageAboutPage {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.custom-audio {
+  width: 50%;
+  transform: translateY(2%) translateX(45%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.custom-audio.hide {
+  opacity: 0;
+}
+.custom-audio:hover{
+  opacity: 100;
+}
+/* Animasi teks dari kanan ke kiri dengan delay */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animasi foto dari bawah ke atas dengan delay */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi teks dari kanan ke kiri dengan delay */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animasi foto dari bawah ke atas dengan delay */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan animasi pada teks dan foto dengan delay */
+.text-second p.daily,
+.imageAboutPage,
+.svs, .skill-img {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.1s;
+}
+
+.svs {
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+.text-second p.daily {
+  animation-name: slideInLeft;
+  animation-delay: 0.5s; /* Delay untuk teks */
+}
+
+.imageAboutPage {
+  animation-name: slideInUp;
+  animation-delay: 0.5s; /* Delay untuk foto */
+}
+
+.skill-img{
+  animation-name: slideInUp;
+  animation-delay: 0.2s; /* Delay untuk foto */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 767px) {
+  .custom-audio {
+    width: 100%;
+    transform: none; /* Menghapus transform pada tampilan mobile */
+  }
+}
+
+/* Untuk responsif pada layar kecil */
+/* @media (max-width: 767px) {
+  .col-md-7,
+  .col-md-5 {
+    width: 100%;
+  }
+} */
+
+/* SECTION skills */
+
+.navbar-nav a.nav-link.active {
+  color: var(--primary-color); /* Warna teks aktif */
+}
+
+#skills {
+  background-color: #191919;
+  padding: 120px 0;
+}
+.bg-amber-200 {
+  background-color: var(--third-color);
+}
+
+/* progress */
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background: gray;
+  border-radius: 3px;
+}
+
+.skill-per {
+  height: 14px;
+  background: var(--third-color);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+/* animasi  skills */
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sks {
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+/* Garis skills */
+.h-\[1px\].garis {
+  transform: translateY(-40px);
+  height: 3px;
+  width: 45%;
+}
+
+/* Skill img */
+.skills-section .skill-img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* SECTION social */
+#contact {
+  background-color: #092635;
+  padding: 80px 0;
+}
+
+.bg-amber-200 {
+  background-color: var(--third-color);
+}
+/* Garis social */
+.h-\[1px\].third {
+  height: 4px;
+  width: 48%;
+}
+
+/* Animasi Untuk icon sosmed */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* animasi pada connect with */
+.cnc {
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+
+/* Terapkan animasi pada setiap ikon dengan delay bertahap */
+.social-section a,
+.cnc {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 0; /* Mengatur opacitas awal menjadi 0 */
+}
+
+.social-section a:nth-child(1) {
+  animation-name: fadeInRight;
+  animation-delay: 0.5s; /* Delay untuk ikon pertama */
+}
+
+.social-section a:nth-child(2) {
+  animation-name: fadeInRight;
+  animation-delay: 1s; /* Delay untuk ikon kedua */
+}
+
+.social-section a:nth-child(3) {
+  animation-name: fadeInRight;
+  animation-delay: 1.5s; /* Delay untuk ikon ketiga */
+}
+
+.social-section a:nth-child(4) {
+  animation-name: fadeInRight;
+  animation-delay: 2s; /* Delay untuk ikon keempat */
+}
+
+.social-section a:nth-child(5) {
+  animation-name: fadeInRight;
+  animation-delay: 2.5s; /* Delay untuk ikon kelima */
+}
+.social-section p {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  opacity: 0; /* Mengatur opacitas awal menjadi 0 */
+  animation-name: slideInLeft;
+}
+
+/* Animasi Form */
+.animated-form {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated-form.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+.py-3 {
+  background-color: var(--dark-color);
+}
